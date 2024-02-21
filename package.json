@@ -1,0 +1,19 @@
+{
+  "name": "prefetchjs",
+  "version": "1.0.0",
+  "description": "Automatically prefetches static resources on hover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmitKhobragade-EcomExperts/PrefetchJS.git"
+  },
+  "author": "Amit Khobragade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmitKhobragade-EcomExperts/PrefetchJS/issues"
+  },
+  "homepage": "https://github.com/AmitKhobragade-EcomExperts/PrefetchJS#readme"
+}
