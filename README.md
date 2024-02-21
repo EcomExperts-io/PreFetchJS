@@ -21,3 +21,13 @@ Paste the following snippet and specify the location to **web-worker-prefetch.js
 </script>
 <script src="{{ 'prefetch.js' | asset_url }}" defer></script>
 ```
+
+## Usage
+**Prefetch.js** is an install-and-use library. Therefore, it doesn't need any configuration. By default, it adds prefetch behavior to all anchor tags with an href. However, if you want to disable the prefetch behavior for certain anchor tags, you just need to add `ignore-preload` to the class attribute of the anchor tag you want to ignore. For example:
+```html
+<a href="placeholder.com/link-1">link 1</a>
+<a href="placeholder.com/link-2" class="placeholder">link 2</a>
+<a href="placeholder.com/link-3" class="placeholder ignore-preload">link 3</a>
+<a href="placeholder.com/link-4" class="ignore-preload">link 4</a>
+```
+Out of all the above links, only link 1 and link 2 will have the preload-on-hover behavior.
