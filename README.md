@@ -23,11 +23,15 @@ Paste the following snippet and specify the location to **web-worker-prefetch.js
 ```
 
 ## Usage
-**Prefetch.js** is an install-and-use library. Therefore, it doesn't need any configuration. By default, it adds prefetch behavior to all anchor tags with an href. However, if you want to disable the prefetch behavior for certain anchor tags, you just need to add `ignore-preload` to the class attribute of the anchor tag you want to ignore. For example:
+**Prefetch.js** is an install-and-use library. Therefore, it doesn't need much configuration except for the class `preload`/`preload-children`. It adds prefetch behavior to all anchor tags with either the class `preload` or a parent with the class `preload-children`. However, if you want to disable the prefetch behavior for certain anchor tags, you just need to add `ignore-preload` to the class attribute of the anchor tag you want to ignore. For example:
 ```html
-<a href="placeholder.com/link-1">link 1</a>
-<a href="placeholder.com/link-2" class="placeholder">link 2</a>
-<a href="placeholder.com/link-3" class="placeholder ignore-preload">link 3</a>
-<a href="placeholder.com/link-4" class="ignore-preload">link 4</a>
+<div class="preload-children">
+  <a href="placeholder.com/link-1">link 1</a>
+  <a href="placeholder.com/link-2" class="placeholder">link 2</a>
+  <a href="placeholder.com/link-3" class="placeholder ignore-preload">link 3</a>
+  <a href="placeholder.com/link-4" class="ignore-preload">link 4</a>
+</div>
+<a href="placeholder.com/link-5" class="placeholder preload">link 5</a>
+<a href="placeholder.com/link-6" class="placeholder">link 6</a>
 ```
-Out of all the above links, only link 1 and link 2 will have the preload-on-hover behavior.
+Out of all the above links, only link 1, link 2 and link 5 will have the preload-on-hover behavior.
