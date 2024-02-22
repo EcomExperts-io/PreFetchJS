@@ -19,7 +19,7 @@ Paste the following snippet and specify the location to **web-worker-prefetch.js
   // base url is required for know if the link is cross origin or not
   const baseURL = "<base URL to your page>";
 </script>
-<script src="{{ 'prefetch.js' | asset_url }}" defer></script>
+<script src="<URL to preload.js file>" defer></script>
 ```
 
 ## Usage
