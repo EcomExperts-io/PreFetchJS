@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmitKhobragade-EcomExperts/PrefetchJS.git"
+    "url": "git+https://github.com/EcomExperts-io/PreFetchJS.git"
   },
   "author": "Amit Khobragade",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmitKhobragade-EcomExperts/PrefetchJS/issues"
+    "url": "https://github.com/EcomExperts-io/PreFetchJS/issues"
   },
-  "homepage": "https://github.com/AmitKhobragade-EcomExperts/PrefetchJS#readme"
+  "homepage": "https://github.com/EcomExperts-io/PreFetchJS#readme"
 }
