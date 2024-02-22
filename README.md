@@ -1,6 +1,6 @@
 # Prefetch.js
 
-**Prefetch.js** is a JavaScript module designed for efficient prefetching of static resources in web applications. This lightweight solution operates seamlessly without disrupting the main thread, prefetching assets like JavaScript files, CSS stylesheets, fonts, and images upon a user's link hover.
+**Prefetch.js** is a JavaScript library designed for seamless resource prefetching in web applications. It efficiently triggers prefetching of static resources, such as JavaScript files, CSS stylesheets, fonts, and images, when a user hovers over a link. The library uses a web worker to extract relevant URLs from the HTML response, and it dynamically creates preload link tags with low fetch priority. Configuration is straightforward, as it automatically adds prefetch behavior to links with the class `preload` or their children with the class `preload-children`. Additionally, users can disable prefetch for specific links by adding the `ignore-preload` class. Overall, Prefetch.js aims to improve web performance by reducing latency and optimizing page load times with a non-intrusive and user-friendly approach.
 
 ## Key Features
 
@@ -35,3 +35,5 @@ Paste the following snippet and specify the location to **web-worker-prefetch.js
 <a href="placeholder.com/link-6" class="placeholder">link 6</a>
 ```
 Out of all the above links, only link 1, link 2 and link 5 will have the preload-on-hover behavior.
+
+We can enable the preload behavior on all the anchor tags on a page by just adding the `preload-children` class to the body tag.
