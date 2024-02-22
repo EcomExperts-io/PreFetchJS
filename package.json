@@ -2,10 +2,9 @@
   "name": "prefetchjs",
   "version": "1.0.0",
   "description": "Automatically prefetches static resources on hover",
-  "main": "index.js",
+  "main": "prefetch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node ./postinstall.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

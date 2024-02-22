@@ -30,7 +30,7 @@ function createPrefetch(url, type, rel = 'preload') {
 }
 
 // initializes the web worker using the prefetchWebWorkerURI variable
-const worker = new Worker(prefetchWebWorkerURI);
+const worker = new Worker('./web-worker-prefetch.js');
 
 // Waits for the web worker's message which then provides the items to preload
 worker.addEventListener('message', (ev) => {
