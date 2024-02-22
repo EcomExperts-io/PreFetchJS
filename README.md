@@ -11,7 +11,7 @@
 - **Effortless Integration:** No complex configurations -- just add the module for streamlined resource loading.
 
 ## Installation
-Paste the following snippet and specify the location to **web-worker-prefetch.js** in the variable `prefetchWebWorkerURI` and the base url for the page in `prefetchWebWorkerURI`
+Paste the following snippet and specify the location to **web-worker-prefetch.js** in the variable `prefetchWebWorkerURI` and the base url for the page in `baseURL`
 ```html
 <script>
   // prefetchWebWorkerURI is required to be initialized before prefetch.js
